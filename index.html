@@ -2,109 +2,50 @@
 <html>
 <head>
     <title>Pets and Paws - Pet Minding Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: #fff;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        blockquote {
-            font-style: italic;
-            border-left: 3px solid #007bff;
-            margin: 10px;
-            padding-left: 15px;
-        }
-	img {
-		height: 1000px;
-}
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to Pets and Paws!</h1>
-        <p>Your trusted partner in pet care. We provide loving attention and care for your pets when you're away.</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-500 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Welcome to Pets and Paws!</h1>
+        <p class="text-lg">Your trusted partner in pet care. We provide loving attention and care for your pets when you're away.</p>
     </header>
 
-    <div class="image-container">
-	<img src="Inidia and Alida with dogs.jpg" alt="Pet Walkers">
+    <div class="image-container flex justify-center my-6">
+        <img src="Inidia and Alida with dogs.jpg" alt="Pet Walkers" class="max-w-full h-auto rounded-lg shadow-lg">
     </div>
 
-    <section id="about">
-        <h2>Our Story</h2>
-	<p>At Pets and Paws, Alida and India worked really hard to get this business running. So we really hope you enjoy it alot. See you soon! 🐾</p>
+    <section id="about" class="p-6 my-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+        <p>At Pets and Paws, Alida and India worked really hard to get this business running. So we really hope you enjoy it alot. See you soon! 🐾</p>
     </section>
 
-
-	                                 <h2>What times?</h2>            
-    <section id="services">
-	    <ul>
-		  <li>Saturday and Sunday: 3:00 to 5:00</li>
-		  <li> Weekdays: 4:00 to 5:00</li>                    
-	      <li>PA days: 3:00 to 5:00 </li>                              
-	    </ul>
-	    
-        <h2>What We Offer</h2> 
-        <ul>
-            <li>Dog Walking</li>
-            <li>Pet Sitting</li>
-            <li>Pet Grooming</li>
+    <section id="services" class="p-6 my-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">What times?</h2>  
+        <ul class="list-disc pl-5">
+            <li class="mb-2">Saturday and Sunday: 3:00 to 5:00</li>
+            <li class="mb-2">Weekdays: 4:00 to 5:00</li>
+            <li class="mb-2">PA days: 3:00 to 5:00</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold mb-4 mt-8">What We Offer</h2> 
+        <ul class="list-disc pl-5">
+            <li class="mb-2">Dog Walking</li>
+            <li class="mb-2">Pet Sitting</li>
+            <li class="mb-2">Pet Grooming</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
+    <section id="contact" class="p-6 my-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
         <p>Please contact us at 647-832-2090</p>
     </section>
 
-
-    <div class="image-container">
-	<img src="Cat.jpeg" alt="Pet Walkers">
-	    <img src="Hamster.jpeg" alt="Pet Walkers">
-	    <img src="Puppy.jpeg" alt="Pet Walkers">
-	    <img src="Snake.jpeg" alt="Pet Walkers">
+    <div class="image-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <img src="Cat.jpeg" alt="Pet Walkers" class="max-w-full h-auto rounded-lg shadow-lg">
+        <img src="Hamster.jpeg" alt="Pet Walkers" class="max-w-full h-auto rounded-lg shadow-lg">
+        <img src="Puppy.jpeg" alt="Pet Walkers" class="max-w-full h-auto rounded-lg shadow-lg">
+        <img src="Snake.jpeg" alt="Pet Walkers" class="max-w-full h-auto rounded-lg shadow-lg">
     </div>
 
 </body>
